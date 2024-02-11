@@ -112,6 +112,8 @@ int main()
     Deck.push_back(2);
     Deck.push_front(0);
 
+    std::cout << "Size:" << Deck.size() << std::endl;
+
     std::cout << "Original Deck:" << Deck << std::endl;
 
     Deck.pop_back();
