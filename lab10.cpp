@@ -4,7 +4,7 @@
 template <typename T>
 class MyDeck
 {
-    private:
+    private: 
         class Node
         {
             public:
@@ -42,7 +42,6 @@ class MyDeck
         {
             if (end!=nullptr)
             {
-                Node* t=end;
                 end=end->previous;
                 if (end!=nullptr)
                 {
@@ -52,7 +51,6 @@ class MyDeck
                 {
                     begin=nullptr;
                 }
-                delete t;
                 Size--; 
             }
         }
@@ -74,7 +72,6 @@ class MyDeck
         {
             if (begin!=nullptr)
             {
-                Node* t=begin;
                 begin=begin->next;
                 if (begin!=nullptr)
                 {
@@ -84,7 +81,6 @@ class MyDeck
                 {
                     end=nullptr;
                 }
-                delete t;
                 Size--;
             }
         }
